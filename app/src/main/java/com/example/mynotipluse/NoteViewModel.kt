@@ -1,4 +1,10 @@
 package com.example.mynotipluse
 
-class NoteViewModel {
+import com.example.mynotipluse.room.NoteRepository
+import javax.inject.Inject
+
+class NoteViewModel @Inject constructor(val noteRepository: NoteRepository) {
+
+
+
 }

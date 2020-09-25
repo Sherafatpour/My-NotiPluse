@@ -1,7 +1,9 @@
-package com.example.mynotipluse.di.module
+package com.example.mynotipluse.di.component
 
 import android.content.Context
 import com.example.mynotipluse.NoteApplication
+import com.example.mynotipluse.di.module.ActivityModule
+import com.example.mynotipluse.di.module.AppModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -15,7 +17,7 @@ interface ApplicationComponent : AndroidInjector<NoteApplication>  {
     @Component.Factory
     interface Factory{
 
-        fun create(@BindsInstance context: Context):ApplicationComponent
+        fun create(@BindsInstance context: Context): ApplicationComponent
 
     }
 
