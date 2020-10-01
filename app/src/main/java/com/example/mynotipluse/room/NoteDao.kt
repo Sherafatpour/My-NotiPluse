@@ -1,6 +1,5 @@
 package com.example.mynotipluse.room
 
-import androidx.lifecycle.LiveData
 import androidx.room.*
 import io.reactivex.Observable
 

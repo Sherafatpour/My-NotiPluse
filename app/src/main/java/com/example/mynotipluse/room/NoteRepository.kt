@@ -15,6 +15,16 @@ class NoteRepository @Inject constructor(val noteDao: NoteDao) {
         }
     }
 
-
-
+    fun insertNote(note: Note){
+        noteDao.insertNote(note = note)
+    }
+    fun updateNote(note: Note){
+        noteDao.updateNote(note = note)
+    }
+    fun deleteNote(note: Note){
+        noteDao.deleteNote(note = note)
+    }
+    fun deleteAllNote(note: Note){
+        noteDao.deleteAllNote()
+    }
 }
