@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">My Noti Pluse</string>
+    <string name="app_name">My Note Pluse</string>
+    <string name="card_item_title">title</string>
+    <string name="card_item_priority">1</string>
+    <string name="card_item_description">description</string>
+    <string name="title_activity_add_note">AddNoteActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="you_r_list_is_empty">You`r List Is Empty</string>
 </resources>

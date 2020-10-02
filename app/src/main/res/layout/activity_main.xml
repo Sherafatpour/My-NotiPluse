@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
 
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="net.sherafatpour.mynotepluse.MainActivity">
 <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/note_recyclerview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    tools:listitem="@layout/note_item"
+    tools:itemCount="50"
+    app:layout_constraintRight_toRightOf="parent"/>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/gotToAddNoteActivity"
+    android:src="@drawable/ic_add"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
     android:layout_margin="16dp"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+<TextView
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/you_r_list_is_empty"
+    android:gravity="center"
+    android:textSize="32sp"
+    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+    app:layout_constraintBottom_toTopOf="@+id/nothing"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+<com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/nothing"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_fileName="empty_list.json"
+    app:layout_constraintRight_toRightOf="parent"
+/></androidx.constraintlayout.widget.ConstraintLayout>
