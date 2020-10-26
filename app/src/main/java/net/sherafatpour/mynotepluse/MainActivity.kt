@@ -1,11 +1,9 @@
 package net.sherafatpour.mynotepluse
 
-import android.R.attr
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
@@ -83,7 +81,7 @@ class MainActivity : DaggerAppCompatActivity() {
                     text.visibility = View.GONE
 
                 }
-                noteAdapter.addNotes(it)
+                noteAdapter.submitList(it)
             }
         )
 
